@@ -1,6 +1,12 @@
 @media screen and (max-width:992px) {
     .main-container{
         width: 100%;
+        padding: 30px 10px;
+        box-sizing: border-box;
+    }
+    .main-container2{
+        width: 100%;
+        padding: 30px 10px;
         box-sizing: border-box;
     }
     .main-container-left{
@@ -14,7 +20,7 @@
         align-self: center;
         justify-self: center;
         box-sizing: border-box;
-        padding: 0px 10px;
+        padding: 0px 35px;
     }
     .main-container2-left{
         width: 35%;
@@ -45,7 +51,9 @@
 width: 100%;
     }
     #bar{
+        width: 50px;
         display: inline-block;
+        border: none;
     }
     .navbar-container{
         display: flex;

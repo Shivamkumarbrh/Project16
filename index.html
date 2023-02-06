@@ -14,7 +14,7 @@
     <div class="navbar">
         <div class="navbar-container">
         <a href="#" id="navbar-first">Home</a>
-        <a href="#" id="bar" onclick="document.querySelector('.navbar-content').style.display = 'block' "><i class="fa-solid fa-bars"></i></a>
+        <button  id="bar"><i class="fa-solid fa-bars"></i></button>
     </div>
     <div class="navbar-content">
         <a href="#">Link 1</a>
@@ -61,8 +61,28 @@
         <h1>Quote of the day: live life</h1>
     </article>
     <footer>
-        <p id="footer-first"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-pinterest"></i><i class="fa-brands fa-linkedin-in"></i></p>
+        <p id="footer-first">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            
+        </p>
         <p id="footer-second">PoweredBYKumar</p>
     </footer>
+    <script>
+        const navbar = document.querySelector('.navbar-content');
+        const btn = document.querySelector('#bar');
+        const show = ()=>{
+        if( navbar.style.display == 'block'){
+            navbar.style.display = 'none';
+        }
+        else{
+            navbar.style.display = 'block';
+        }
+    }
+        btn.addEventListener('click',show)
+    </script>
 </body>
 </html>
